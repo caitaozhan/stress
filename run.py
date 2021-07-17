@@ -10,5 +10,5 @@ if __name__ == '__main__':
     for i in range(stop):            # time of one iteration is in the order of a few microseconds (10e-6 second)
         a = np.random.rand(10, 10)
         b = np.random.rand(10, 10)
-        c = a@b
+        c = np.dot(a,b)
     print('time {:.2f}s'.format(time.time() - start))

@@ -1,10 +1,22 @@
+For Ubuntu machines, use a tool called s-tui to get the cpu freq and power information
+For Windows machine, use the task manager to get the cpu freq information
+For Intel Mac, use a tool called intel power gadget to get the cpu freq and power information
+For Apple silicon Mac, don't know how to get the cpu freq and power information yet...
 
-Lenovo                                       ThinkPad E431
-i5-3230M (2 core, 4 hyperthread)             i5-3320M (2 core, 4 hyperthread)
-task | time(s) | freq(GHz) | power(W)        task | time(s) | freq(GHz) | power(W)  
-1    | 101     | 3.2       | 11              1    | 100     | 3.2       | 13
-2    | 107     | 3.0       | 14              2    | 117     | 1.2-3.1   | 17
-4    | 192     | 3.0       | 15              4    | 270     | 1.2-3.1   | 18   Note: can not keep the freq due to high temp
+
+ThinkPad E431
+i5-3320M (2 core, 4 hyperthread)
+task | time(s) | freq(GHz) | power(W)  
+1    | 100     | 3.2       | 13
+2    | 117     | 1.2-3.1   | 17
+4    | 270     | 1.2-3.1   | 18   Note: can not keep the freq due to high temp
+
+Lenovo                               
+i5-3230M (2 core, 4 hyperthread)     
+task | time(s) | freq(GHz) | power(W)
+1    | 101     | 3.2       | 11      
+2    | 107     | 3.0       | 14      
+4    | 192     | 3.0       | 15      
 
 Acer
 i5-4200U (2 core, 4 hyperthread)
@@ -15,12 +27,12 @@ task | time(s) | freq(GHz) | power(W)
 
 Mac Pro (2013)
 3.7 GHz Quad-Core Intel Xeon E5 (4 cores, 8 hyperthread)
-task | time(s) | freq(GHz) | power(W)
-1    | 59      |           | 
-2    | 62      |           | 
-4    | 64      |           |
-6    | 91      |           |
-8    | 118     |           |
+task | time(s)
+1    | 59
+2    | 62
+4    | 64
+6    | 91
+8    | 118
 
 Thinkpad P50 (2016)
 i7-6700HQ (4 core, 8 hyperthread)
@@ -59,20 +71,29 @@ task | time(s) | freq(GHz) | power(W)
 
 MacBook Pro 13' (2020)
 M1 (4 high-performace cores + 4 energy-efficient cores)
-Task | time(s) | freq(GHz) | power(W)
-1    | 24      |
-2    | 25      |
-4    | 27      |
-6    | 34      |
-8    | 41      |
-12   | 60      |
+Task | time(s)
+1    | 24
+2    | 25
+4    | 27
+6    | 34
+8    | 41
+12   | 60
 
 Microsoft Surface Laptop 3 (2020)
 i7-1065G7 (4 core, 8 hyperthread)
-Task | time(s) | freq(GHz) | power(W)
+Task | time(s) | freq(GHz)
 1    | 44      | 3.6
 2    | 44      | 3.6
 4    | 54      | 2.9
 6    | 83      | 2.7
 8    | 121     | 2.3
 
+MacBook Pro 14' (2021)
+M1 Pro (6 performace cores + 2 efficient cores)
+Task | time(s)
+1    | 23
+2    | 24
+4    | 24
+6    | 25
+8    | 30
+12   | 44

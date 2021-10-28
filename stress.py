@@ -11,8 +11,9 @@ def get_runtime(p: Popen):
     '''get the stdout and extract the runtime
        example stdout: b'time=2.33s\n'
     '''
-    if p.stderr.readlines():
-        for line in p.stderr():
+    error = p.stderr.readlines()
+    if error:
+        for line in error:
             print(line)
         raise('error in run.py process')
 

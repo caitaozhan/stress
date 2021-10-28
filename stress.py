@@ -25,7 +25,7 @@ def get_runtime(p: Popen):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='stress the CPU')
-    parser.add_argument('-t', '--tasks', type=int, nargs='+', default=[1, 2], help='number of tasks')
+    parser.add_argument('-t', '--tasks', type=int, nargs='+', default=[1, 2, 4, 6, 8], help='number of tasks')
     args = parser.parse_args()
 
     for task in args.tasks:

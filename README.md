@@ -3,4 +3,4 @@ Stress all kinds of CPU
 
 Run the following in terminal:
 
-python3 stress.py -t 1 2 4 8
+python3 stress.py -t 1 2 4 6 8

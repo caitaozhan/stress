@@ -60,6 +60,14 @@ task | time(s) | freq(GHz) | power(W)
 8    | 75      | 3.6       | 65 
 12   | 107     | 3.5       | 65
 
+ThinkPad x1c (2019)
+i5-10210U (4 core, 8 hyperthread)
+Task | time(s)
+1    | 46
+2    | 54
+4    | 75
+8    | 145
+
 HP laptop (2020)
 i5-1035G1 (4 core, 8 hyperthread)
 task | time(s) | freq(GHz) | power(W)

@@ -18,7 +18,7 @@ def get_runtime(p: Popen):
         raise('error in run.py process')
 
     for line in p.stdout:
-        runtime = float(line[5:9])
+        runtime = float(line[5:-2])
         return runtime
 
 # example: python3 stress.py -t 1 2 4 8

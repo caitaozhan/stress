@@ -9,7 +9,7 @@ import time
 import numpy as np
 
 if __name__ == '__main__':
-    repeat = int(1e6)
+    repeat = int(1e7)
     start = time.time()
     for i in range(repeat):
         a = np.random.rand(10, 10)

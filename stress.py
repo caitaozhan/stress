@@ -21,6 +21,8 @@ def get_runtime(p: Popen):
         runtime = float(line[5:9])
         return runtime
 
+# example: python3 stress.py -t 1 2 4 8
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='stress the CPU')
     parser.add_argument('-t', '--tasks', type=int, nargs='+', default=[1, 2], help='number of tasks')
@@ -44,5 +46,5 @@ if __name__ == '__main__':
                     runtimes.append(get_runtime(p))
             ps = new_ps
             time.sleep(1)
-        print(f'# of task = {task}, runtimes = {runtimes}')
+        print(f'# of tasks = {task}, runtimes = {runtimes}')
 

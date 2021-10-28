@@ -88,6 +88,17 @@ Task | time(s) | freq(GHz)
 6    | 83      | 2.7
 8    | 121     | 2.3
 
+ABS Desktop (2021)
+i7-10700KF (8 core, 16 hyperthread)
+task | time(s) | freq(GHz)
+1    | 33      | 4.8
+2    | 35      | 4.7
+4    | 35      | 4.7
+6    | 35      | 4.7 
+8    | 35      | 4.7
+12   | 51      | 4.5
+16   | 68      | 4.5
+
 MacBook Pro 14' (2021)
 M1 Pro (6 performace cores + 2 efficient cores)
 Task | time(s)
@@ -97,3 +108,4 @@ Task | time(s)
 6    | 25
 8    | 30
 12   | 44
+16   | 60

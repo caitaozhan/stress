@@ -11,6 +11,6 @@ Part 2, test disk: Writing an 1GB numpy object to disk and reading it 10 times
 (RAM will affect this test a little)
 
 Machine Model                                          | Write (GB/s) | Read (GB/s)
-MacBook Pro 2021, M1 Pro, 16G Unified Memory, 512G SSD | 0.74         | 4.42
-MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 0.43         | 1.02
+MacBook Pro 2021, M1 Pro, 16G Unified Memory, 512G SSD | 0.75         | 4.55
+MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 0.44         | 1.11
 ABS Summoner Gaming 2018, i7-8700, DDR4, 1T SSD        | 0.74         | 7.24

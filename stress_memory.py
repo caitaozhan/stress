@@ -22,7 +22,7 @@ def test_ram():
     elapse = time.time() - start
     print(f'Time of deep copying a {size_gb} GB object 100 times = {elapse:0.2f}s, speed = {100/elapse:0.2f} GB/s')
 
-def test_disk():
+def test_disk_numpy():
     print('=== Test Disk ===')
     object = np.random.rand(1024, 1024, 128)
     size_gb = object.nbytes / 1024**3
@@ -45,6 +45,7 @@ def test_disk():
     for i in range(10):
         os.remove(filename.format(i))
 
+
 if __name__ == '__main__':
     test_ram()
-    test_disk()
+    test_disk_numpy()

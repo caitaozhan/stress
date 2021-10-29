@@ -24,27 +24,39 @@ def test_ram():
 
 def test_disk():
     print('=== Test Disk ===')
-    object = np.random.rand(1024, 1024, 128)
-    size_gb = object.nbytes / 1024**3
-    filename = 'object-{}.npy'
+    def helper(object, repeat):
+        size_gb = object.nbytes / 1024**3
+        filename = 'object-{}.npy'
 
-    start = time.time()
-    for i in range(10):
-        np.save(filename.format(i), object)
-    elapse = time.time() - start
-    print(f'Time of writing a {size_gb} GB object 10 times       = {elapse:0.2f}s, speed = {10/elapse:0.2f} GB/s')
-    
-    start = time.time()
-    for i in range(10):
-        object = np.load(filename.format(i))
+        start = time.time()
+        for i in range(repeat):
+            np.save(filename.format(i), object)
+        elapse = time.time() - start
+        print(f'Time of writing a {size_gb:.6f} GB object {repeat} times       = {elapse:0.2f}s, speed = {size_gb*repeat/elapse:0.2f} GB/s')
         del object
-    elapse = time.time() - start
-    print(f'Time of reading a {size_gb} GB object 10 times       = {elapse:0.2f}s, speed = {10/elapse:0.2f} GB/s')
 
-    # delete the files for testing
-    for i in range(10):
-        os.remove(filename.format(i))
+        start = time.time()
+        objects = []
+        for i in range(repeat):
+            objects.append(np.load(filename.format(i)))
+        elapse = time.time() - start
+        print(f'Time of reading a {size_gb:.6f} GB object {repeat} times       = {elapse:0.2f}s, speed = {size_gb*repeat/elapse:0.2f} GB/s')
+
+        # delete the files for testing
+        for i in range(repeat):
+            os.remove(filename.format(i))
+
+    object = np.random.rand(1024, 131)
+    repeat = 5000
+    helper(object, repeat)
+    object = np.random.rand(1024, 1311, 1)
+    repeat = 500
+    helper(object, repeat)
+    object = np.random.rand(1024, 1024, 128)
+    repeat = 5
+    helper(object, repeat)
+
 
 if __name__ == '__main__':
-    test_ram()
+    # test_ram()
     test_disk()

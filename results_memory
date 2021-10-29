@@ -1,10 +1,10 @@
 Part 1 test RAM: Time of deep copy an 1 GB object 100 times and deleting it
 
-Machine Model                        | Time(s)
-MacBook Pro 2021, M1 Pro (8/14 core) | 9.73
-MacBook Pro 2017, 13 inch, i5-7267U  | 58.51
-ABS Summoner Gaming (2018), DDR4     | 12.64
-ABS Legend Gaming (2021), DDR4       |
+Machine Model                            | Time(s)
+MacBook Pro 2021, Unified Memory, M1 Pro | 9.73
+MacBook Pro 2017, LPDDR3, i5-7267U       | 58.51
+ABS Summoner Gaming (2018), DDR4         | 12.64
+ABS Legend Gaming (2021), DDR4           |
 
 
 

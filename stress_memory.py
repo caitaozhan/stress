@@ -1,37 +1,43 @@
 '''
 Stress the RAM  by copy.deepcopy
-Stress the disk by np.save
+Stress the disk by np.save and np.load
 '''
 
 import copy
 import numpy as np
 import time
-import shutil
 
 def test_ram():
+    print('=== Test RAM ===')
     object = np.random.rand(1024, 1024, 128)
-    print(f'Size of object = {object.nbytes / 1024**3:0.3f} GB')
+    size_gb = object.nbytes / 1024**3
     start = time.time()
     for _ in range(100):
         object2 = copy.deepcopy(object)
-        del object2
-    print(f'Time of deep copying an 1 GB object 100 times and deleting it = {time.time() - start:0.2f}s')
+        del object2   # manual delete will slightly decrease the time
+    elapse = time.time() - start
+    print(f'Time of deep copying a {size_gb} GB object 100 times = {elapse:0.2f}s, speed = {100/elapse:0.2f} GB/s')
 
 def test_disk():
+    print('=== Test Disk ===')
     object = np.random.rand(1024, 1024, 128)
-    print(f'Size of object = {object.nbytes / 1024**3:0.3f} GB')
+    size_gb = object.nbytes / 1024**3
     filename = 'object.npy'
+
     start = time.time()
-    for _ in range(20):
+    for _ in range(10):
         np.save(filename, object)
-    print(f'Time of writing an 1 GB object 20 times = {time.time() - start:0.3f}s')
+    elapse = time.time() - start
+    print(f'Time of writing a {size_gb} GB object 10 times       = {elapse:0.2f}s, speed = {10/elapse:0.2f} GB/s')
     
     start = time.time()
-    for _ in range(20):
+    for _ in range(10):
         object = np.load(filename)
-    print(f'Time of reading an 1 GB object 20 times = {time.time() - start:0.3f}s')
+        del object
+    elapse = time.time() - start
+    print(f'Time of reading a {size_gb} GB object 10 times       = {elapse:0.2f}s, speed = {10/elapse:0.2f} GB/s')
 
 
 if __name__ == '__main__':
-    # test_ram()
+    test_ram()
     test_disk()

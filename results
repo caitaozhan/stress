@@ -3,6 +3,8 @@ For Windows machine, use the task manager to get the cpu freq information
 For Intel Mac, use a tool called intel power gadget to get the cpu freq and power information
 For Apple silicon Mac, don't know how to get the cpu freq and power information yet...
 
+Observation: Some machines are better at maintaining the frequency when the number of tasks increase. The chip design and the cooling system both play a big role here.
+
 
 ThinkPad E431
 i5-3320M (2 core, 4 hyperthread)
@@ -11,7 +13,7 @@ task | time(s) | freq(GHz) | power(W)
 2    | 117     | 1.2-3.1   | 17
 4    | 270     | 1.2-3.1   | 18   Note: can not keep the freq due to high temp
 
-Lenovo                               
+Lenovo
 i5-3230M (2 core, 4 hyperthread)     
 task | time(s) | freq(GHz) | power(W)
 1    | 101     | 3.2       | 11      
@@ -127,6 +129,17 @@ task | time(s) | freq(GHz)
 8    | 35      | 4.7
 12   | 51      | 4.7
 16   | 64      | 4.7
+
+HP Desktop (2021)
+i7-11700 (8 core, 16 hyperthread)
+task | time(s) | freq(GHz)
+1    | 33      | 4.8
+2    | 33      | 4.8
+4    | 41      | 3.8
+6    | 47      | 3.3
+8    | 57      | 3.0
+12   | 81      | 2.9
+16   | 104     | 2.8
 
 MacBook Pro 14' (2021)
 M1 Pro (6 performace cores + 2 efficient cores)

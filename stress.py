@@ -18,7 +18,10 @@ def get_runtime(p: Popen):
         raise('error in run.py process')
 
     for line in p.stdout:
-        runtime = float(line[5:-2])
+        line = line.decode('ASCII')  # b'time=23.33s\n' --> 'time=23.33s\n'
+        s = line.find('=')
+        e = line.find('s')
+        runtime = float(line[s+1:e])
         return runtime
 
 # example: python3 stress.py -t 1 2 4 8
@@ -47,4 +50,7 @@ if __name__ == '__main__':
             ps = new_ps
             time.sleep(1)
         print(f'# of tasks = {task}, runtimes = {runtimes}')
+        
+        # a little rest
+        time.sleep(3)
 

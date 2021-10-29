@@ -43,6 +43,17 @@ task | time(s) | freq(GHz) | power(W)
 6    | 85      | 3.1       | 43
 8    | 108     | 3.1       | 44
 
+HPC Server (2016)
+Dual E5-2630 v4 (20 core, 40 hyperthread)
+task | time(s) | freq(GHz)
+1    | 56      | 3.1
+2    | 63      | 3.1
+4    | 63      | 2.8
+8    | 61      | 2.8
+16   | 73      | 2.4
+32   | 104     | 2.4
+40   | 132     | 2.4
+
 MacBook Pro 13' (2017)
 i5-7267U (2 core, 4 hyperthread)
 task | time(s) | freq(GHz) | power(W)
@@ -95,6 +106,16 @@ Task | time(s) | freq(GHz)
 4    | 54      | 2.9
 6    | 83      | 2.7
 8    | 121     | 2.3
+
+Custom Built Desktop (2021)
+i7-10700F (8 core, 16 hyperthread)
+task | time(s) | freq(GHz) | power(W)
+1    | 38      | 4.6       | 28
+2    | 38      | 4.6       | 41
+4    | 43      | 4.6       | 67
+8    | 49      | 4.6       | 112
+12   | 61      | 4.6       | 142
+16   | 76      | 4.6       | 160
 
 ABS Desktop (2021)
 i7-10700KF (8 core, 16 hyperthread)

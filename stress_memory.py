@@ -9,6 +9,7 @@ For more comprehensive testing: https://fio.readthedocs.io/en/latest/fio_doc.htm
 import copy
 import numpy as np
 import time
+import os
 
 def test_ram():
     print('=== Test RAM ===')
@@ -25,21 +26,24 @@ def test_disk():
     print('=== Test Disk ===')
     object = np.random.rand(1024, 1024, 128)
     size_gb = object.nbytes / 1024**3
-    filename = 'object.npy'
+    filename = 'object-{}.npy'
 
     start = time.time()
-    for _ in range(10):
-        np.save(filename, object)
+    for i in range(10):
+        np.save(filename.format(i), object)
     elapse = time.time() - start
     print(f'Time of writing a {size_gb} GB object 10 times       = {elapse:0.2f}s, speed = {10/elapse:0.2f} GB/s')
     
     start = time.time()
-    for _ in range(10):
-        object = np.load(filename)
+    for i in range(10):
+        object = np.load(filename.format(i))
         del object
     elapse = time.time() - start
     print(f'Time of reading a {size_gb} GB object 10 times       = {elapse:0.2f}s, speed = {10/elapse:0.2f} GB/s')
 
+    # delete the files for testing
+    for i in range(10):
+        os.remove(filename.format(i))
 
 if __name__ == '__main__':
     test_ram()

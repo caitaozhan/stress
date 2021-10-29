@@ -1,4 +1,5 @@
 '''
+My own simple version of testing RAM and disk based on my workflow.
 Stress the RAM  by copy.deepcopy
 Stress the disk by np.save and np.load
 '''

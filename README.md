@@ -1,5 +1,5 @@
 # Introduction
-This is a simple and naive performance testing tool, derived from my workflow (need python3 and numpy). The testing is not comprehensive, but I think it is a good estimation of the true performance.
+This is a simple and naive performance testing tool, derived from my workflow (need python3 and numpy). The testing is not comprehensive, but I think it is a good enough estimation.
 
 # Test CPU Performance
 Stress all kinds of CPU by matrix multiplication. Just run the following in the terminal:

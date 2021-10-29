@@ -2,7 +2,7 @@ Part 1, test RAM: Deep copy an 1 GB numpy object 100 times
 
 Machine Model                                          | Deep Copy (GB/s)
 MacBook Pro 2021, M1 Pro, 16G Unified Memory, 512G SSD | 10.14
-MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 1.69
+MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 1.72
 ABS Summoner Gaming 2018, i7-8700, DDR4, 1T SSD        | 7.82
 
 ==============================================================================
@@ -12,5 +12,5 @@ Part 2, test disk: Writing an 1GB numpy object to disk and reading it 10 times
 
 Machine Model                                          | Write (GB/s) | Read (GB/s)
 MacBook Pro 2021, M1 Pro, 16G Unified Memory, 512G SSD | 1.30         | 6.24
-MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 0.11         | 1.85
+MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 0.54         | 1.85
 ABS Summoner Gaming 2018, i7-8700, DDR4, 1T SSD        | 0.41         | 7.24

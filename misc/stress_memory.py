@@ -32,7 +32,7 @@ def test_disk():
         for i in range(repeat):
             np.save(filename.format(i), object)
         elapse = time.time() - start
-        print(f'Time of writing a {size_gb:.6f} GB object {repeat} times       = {elapse:0.2f}s, speed = {size_gb*repeat/elapse:0.2f} GB/s')
+        print(f'Time of writing a {size_gb:.6f} GB object {repeat:>4} times       = {elapse:0.2f}s, speed = {size_gb*repeat/elapse:0.2f} GB/s')
         del object
 
         start = time.time()
@@ -40,7 +40,7 @@ def test_disk():
         for i in range(repeat):
             objects.append(np.load(filename.format(i)))
         elapse = time.time() - start
-        print(f'Time of reading a {size_gb:.6f} GB object {repeat} times       = {elapse:0.2f}s, speed = {size_gb*repeat/elapse:0.2f} GB/s')
+        print(f'Time of reading a {size_gb:.6f} GB object {repeat:>4} times       = {elapse:0.2f}s, speed = {size_gb*repeat/elapse:0.2f} GB/s')
 
         # delete the files for testing
         for i in range(repeat):
@@ -57,6 +57,7 @@ def test_disk():
     helper(object, repeat)
 
 
+
 if __name__ == '__main__':
-    # test_ram()
-    test_disk()
+    test_ram()
+    # test_disk()

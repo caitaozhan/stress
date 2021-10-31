@@ -91,6 +91,15 @@ task | time(s) | freq(GHz) | power(W)
 8    | 141     | 1.9       | 15
 
 MacBook Pro 13' (2020)
+i5-1038NG7 (4 core, 8 hyperthread)
+task | time(s)
+1    | 40
+2    | 42
+4    | 52
+6    | 70
+8    | 92
+
+MacBook Pro 13' (2020)
 M1 (4 high-performace cores + 4 energy-efficient cores)
 Task | time(s)
 1    | 24

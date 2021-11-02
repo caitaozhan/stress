@@ -150,6 +150,17 @@ task | time(s) | freq(GHz)
 12   | 81      | 2.9
 16   | 104     | 2.8
 
+MacBook Air (2021)
+M1 (4 performance cores + 4 efficient cores)
+Task | time(s)
+1    | 25
+2    | 25
+4    | 30
+6    | 40
+8    | 48
+12   | 73
+16   | 100
+
 MacBook Pro 14' (2021)
 M1 Pro (6 performace cores + 2 efficient cores)
 Task | time(s)

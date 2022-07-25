@@ -7,7 +7,7 @@ Stress all kinds of CPU mainly by matrix multiplication. Just run the following 
 **python3 stress.py -t 1 2 4 6 8 12 16**
 
 # Results
-Summary: M1 Pro is a laptop CPU (red line), but it beats the high-end desktop Intel CPU (green line), not to mention the labtop Intel CPU (blue and orange line).
-Most laptop CPU are bad at maintaining the frequency when the number of tasks（one task is doing 10x10 matrix multiplication 10 million times）increase, i.e. frequency will drop. The M1 Pro is an exception.
 
-![cpu_perf](https://github.com/caitaozhan/stress/blob/main/cpu_perf.png)
+![cpu_perf](cpu_perf.png)
+
+**Evaluation**: M1 Pro is a laptop CPU (red line), but it beats the high-end desktop Intel CPU (green line), not to mention the labtop Intel CPU (blue and orange line). M2 in MacBook Air (purple line) is faster than M1 Pro when the number of task is 4 or under, but is slower when the number of task is larger than 4. This is because the M1 Pro has 6 performace cores and 2 efficiency cores while the M2 has 4 performance cores and 4 efficiency cores.

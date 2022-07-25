@@ -11,13 +11,6 @@ def plot():
 
     plt.rcParams['font.size'] = 45
     plt.rcParams['lines.linewidth'] = 10
-    # fig, ax = plt.subplots(1, 1, figsize=(20, 18))
-    # fig.subplots_adjust(left=0.15, right=0.98, top=0.85, bottom=0.12)
-    # ax.plot(np.arange(len(y1)), y1, marker='o', markersize=20, label='i5-1035G1')
-    # ax.plot(np.arange(len(y2)), y2, marker='o', markersize=20, label='i7-1065G7')
-    # ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF')
-    # ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro (6 + 2)')
-    # fig.legend(ncol=2, fontsize=50, bbox_to_anchor=(0.95, 1))
     fig, ax = plt.subplots(1, 1, figsize=(20, 20))
     fig.subplots_adjust(left=0.15, right=0.95, top=0.77, bottom=0.12)
     ax.plot(np.arange(len(y2)), y2, marker='o', markersize=20, label='i7-1065G7 (Microsoft Surface 3 2020)')

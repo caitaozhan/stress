@@ -6,7 +6,8 @@ def plot():
     y1 = [50, 55, 73, 107, 141]        # i5-1035G1
     y2 = [44, 44, 54, 83,  121]        # i7-1065G7
     y3 = [33, 35, 35, 35, 35, 51, 64]  # i7-10700KF
-    y4 = [23, 24, 24, 25, 30, 44, 60]  # M1 Pro (8 core)
+    y4 = [23, 24, 24, 25, 30, 44, 60]  # M1 Pro (6 + 2)
+    y5 = [19, 19, 22, 26, 33, 47, 65]  # M2 (4 + 4)
 
     plt.rcParams['font.size'] = 60
     plt.rcParams['lines.linewidth'] = 10
@@ -15,7 +16,8 @@ def plot():
     ax.plot(np.arange(len(y1)), y1, marker='o', markersize=20, label='i5-1035G1')
     ax.plot(np.arange(len(y2)), y2, marker='o', markersize=20, label='i7-1065G7')
     ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF')
-    ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro (8 core)')
+    ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro (6 + 2)')
+    ax.plot(np.arange(len(y5)), y5, marker='o', markersize=20, label='M2 (4 + 4)')
     fig.legend(ncol=2, fontsize=50, bbox_to_anchor=(0.95, 1))
     ax.set_xticks(np.arange(len(X)))
     ax.set_xticklabels([str(x) for x in X])

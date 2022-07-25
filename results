@@ -151,3 +151,15 @@ Task | time(s)
 8    | 30
 12   | 44
 16   | 60
+
+MacBook Pro Air (2022)
+M2 (4 performace cores + 4 efficient cores)
+Task | time(s)
+1    | 19
+2    | 19
+4    | 22
+6    | 26
+8    | 33
+12   | 47
+16   | 65
+

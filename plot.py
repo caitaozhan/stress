@@ -24,7 +24,7 @@ def plot():
     ax.plot(np.arange(len(y1)), y1, marker='o', markersize=20, label='i5-1038NG7 (MacBook Pro 2020)')
     ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF (ABS Legend Gaming 2021)')
     ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro 8/14 core (MacBook Pro 2021)')
-    ax.plot(np.arange(len(y5)), y5, marker='o', markersize=20, label='M2 8/10 core (MacBook Air 2022')
+    ax.plot(np.arange(len(y5)), y5, marker='o', markersize=20, label='M2 8/10 core (MacBook Air 2022)')
     fig.legend(ncol=1, fontsize=40, bbox_to_anchor=(0.90, 1))
     ax.set_xticks(np.arange(len(X)))
     ax.set_xticklabels([str(x) for x in X])

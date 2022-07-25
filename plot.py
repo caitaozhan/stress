@@ -9,7 +9,7 @@ def plot():
     y4 = [23, 24, 24, 25, 30, 44, 60]  # M1 Pro (6 + 2)
     y5 = [19, 19, 22, 26, 33, 47, 65]  # M2 (4 + 4)
 
-    plt.rcParams['font.size'] = 50
+    plt.rcParams['font.size'] = 45
     plt.rcParams['lines.linewidth'] = 10
     # fig, ax = plt.subplots(1, 1, figsize=(20, 18))
     # fig.subplots_adjust(left=0.15, right=0.98, top=0.85, bottom=0.12)
@@ -18,8 +18,8 @@ def plot():
     # ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF')
     # ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro (6 + 2)')
     # fig.legend(ncol=2, fontsize=50, bbox_to_anchor=(0.95, 1))
-    fig, ax = plt.subplots(1, 1, figsize=(20, 22))
-    fig.subplots_adjust(left=0.15, right=0.95, top=0.78, bottom=0.12)
+    fig, ax = plt.subplots(1, 1, figsize=(20, 20))
+    fig.subplots_adjust(left=0.15, right=0.95, top=0.77, bottom=0.12)
     ax.plot(np.arange(len(y2)), y2, marker='o', markersize=20, label='i7-1065G7 (Microsoft Surface 3 2020)')
     ax.plot(np.arange(len(y1)), y1, marker='o', markersize=20, label='i5-1038NG7 (MacBook Pro 2020)')
     ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF (ABS Legend Gaming 2021)')
@@ -30,7 +30,7 @@ def plot():
     ax.set_xticklabels([str(x) for x in X])
     ax.set_xlabel('Number of Tasks\n(task = do 10x10 matrix multiplication 10e7 times)')
     ax.set_ylabel('Runtime (s)')
-    ax.set_ylim([0, 130])
+    ax.set_ylim([0, 125])
     ax.tick_params(axis='x', direction='in', length=10, width=3, pad=15)
     ax.tick_params(axis='y', direction='in', length=10, width=3, pad=15)
     fig.savefig('cpu_perf.png')

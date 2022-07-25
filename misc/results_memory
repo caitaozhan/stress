@@ -1,9 +1,12 @@
 Part 1, test RAM: Deep copy an 1 GB numpy object 100 times
 
 Machine Model                                          | Deep Copy (GB/s)
-MacBook Pro 2021, M1 Pro, 16G Unified Memory, 512G SSD | 10.14
+MacBook Air, M1, Unified Memory, 256G SSD              | 11.23
+MacBook Pro 2021, M1 Pro, Unified Memory, 512G SSD     | 10.14
+ABS Summoner Gaming 2018, i7-8700, DDR4, 1T SSD        | 7.64
+ABS Legend Gaming 2021, i7-10700KF, DDR4, 1T SSD       | 6.20
+MacBook Pro 2020, i5-1035G1, LPDDR4X, 512 SSD          | 1.82
 MacBook Pro 2017, i5-7267U, LPDDR3, 256G SSD           | 1.72
-ABS Summoner Gaming 2018, i7-8700, DDR4, 1T SSD        | 7.82
 
 ==============================================================================
 

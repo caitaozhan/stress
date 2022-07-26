@@ -11,7 +11,7 @@ Stress all kinds of CPU mainly by matrix multiplication. Just run the following 
 ![cpu_perf](cpu_perf.png)
 
 **Evaluation**
-1. M1 Pro is a laptop CPU (red line), but it beats the high-end desktop Intel CPU (green line), not to mention the labtop Intel CPU (blue and orange line). 
+1. M1 Pro is a laptop CPU (red line), but it beats the high-end desktop Intel CPU (green line), not to mention the labtop 10th-gen Intel CPU (blue and orange line). Note that the laptop i7 (blue line) is slower than laptop i5 (orange line). I think it is because the Microsoft Surface easily overheats and the Windows operating system will decrease the frequency, LOL.
 2. M2 in MacBook Air (purple line) is faster than M1 Pro (red line) when the number of task is 4 or under, but is slower when the number of task is larger than 4. This is because the M1 Pro has 6 performance cores and 2 efficiency cores while the M2 has 4 performance cores and 4 efficiency cores.
 
 # Notes

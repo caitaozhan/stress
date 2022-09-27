@@ -1,8 +1,8 @@
 # Introduction
-This is a simple and naive performance testing tool, derived from my workflow (need python3 and numpy). The testing is not comprehensive, but I think it is a good enough estimation.
+This is a simple and naive performance testing tool, derived from my workflow that heavily uses Python3 and Numpy. The testing is not comprehensive, but I think it is a good enough estimation.
 
 # Test CPU Performance
-Stress all kinds of CPU mainly by matrix multiplication. Just run the following in the terminal:
+Stress all kinds of CPU mainly by small matrix multiplication (I observe that small matrix multipliaction in Numpy only uses single core, while large matrix multiplication uses multi-core). Just run the following in the terminal:
 
 **python3 stress.py -t 1 2 4 6 8 12 16**
 

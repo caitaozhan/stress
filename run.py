@@ -3,6 +3,9 @@ stress a single core with a small matrix multiplications. Small matrix multiplic
 
 10/27/2021: Note that the Apple built-in python2 and python3 are directly running on the Apple silicon,
 whereas the Anaconda's python2 and python3 has to go through the rosetta, almost doubling the runtime.
+
+Sep. 2021: Realized that Anaconda has released a version for Apple Silicon.
+
 '''
 
 import time

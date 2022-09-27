@@ -1,5 +1,5 @@
 '''
-stress a single core with a lot of matrix multiplications
+stress a single core with a small matrix multiplications. Small matrix multiplication in Numpy uses single core, while large matrix multiplicaiton in Numpy uses multi-core.
 
 10/27/2021: Note that the Apple built-in python2 and python3 are directly running on the Apple silicon,
 whereas the Anaconda's python2 and python3 has to go through the rosetta, almost doubling the runtime.

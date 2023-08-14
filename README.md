@@ -1,12 +1,8 @@
 # Introduction
-This is a simple and naive performance testing tool, derived from my workflow that heavily uses Python3 and Numpy. The testing is not comprehensive, but I think it is a good enough estimation.
-
-It is interesting to see how the CPU advances throughout the years. The complete raw data is [here](results). I have the data since the 3rd generation Intel chip using Ivy Bridge 22 nm microarchitecture. That was the laptop during my undergrad (2013~2017).
+It is interesting to see how the CPU advances throughout the years. This repository is a simple and naive performance testing tool, derived from my workflow that heavily uses Python3 and Numpy. The testing is not comprehensive, but it is a good enough estimation.
 
 # My CPU Performance Benchmark
-Stress a CPU by small matrix multiplication (I observe that small matrix multipliaction in Numpy only uses a single core, while large matrix multiplication uses multi-core). 
-
-To start the benchmark, please run the following in the terminal:
+Stress a CPU by small matrix multiplication (I observe that small matrix multipliaction in Numpy only uses a single core, while large matrix multiplication uses multi-core). To start the benchmark, please run the following in the terminal:
 
 **python stress.py -t 1 2 4 6 8 12 16**
 
@@ -24,3 +20,5 @@ To start the benchmark, please run the following in the terminal:
 2. M1 Pro is a laptop CPU (green line), but it beats the high-end desktop Intel CPU (orange line), not to mention the labtop 10th-gen Intel CPU (blue line). 
 3. M2 in MacBook Air (red line) is faster than M1 Pro (green line) when the number of task is 4 or under, but is slower when the number of task is larger than 4. This is because the M1 Pro has 6 performance cores and 2 efficiency cores while the M2 has 4 performance cores and 4 efficiency cores.
 
+
+ The complete raw data is [here](results). I have the data since the 3rd generation Intel chip using Ivy Bridge 22 nm microarchitecture. That was the laptop during my undergrad (2013~2017).

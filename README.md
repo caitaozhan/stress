@@ -1,18 +1,24 @@
 # Introduction
 This is a simple and naive performance testing tool, derived from my workflow (need python3 and numpy). The testing is not comprehensive, but I think it is a good enough estimation.
 
-# Test CPU Performance
-Stress all kinds of CPU mainly by matrix multiplication. Just run the following in the terminal:
+It is interesting to see how the CPU advances throughout the years. The complete raw data is [here](results). I have the data since the 3rd generation Intel chip using Ivy Bridge 22 nm microarchitecture. That was the laptop during my undergrad (2013~2017).
 
-**python3 stress.py -t 1 2 4 6 8 12 16**
+# My CPU Performance Benchmark
+Stress a CPU by small matrix multiplication. Just run the following in the terminal:
+
+**python stress.py -t 1 2 4 6 8 12 16**
+
+# How Software Impact the Perforamnce
+- Operating System has an impact on the performance. If a desktop is Linux and Windows dual boot, then the Linux will be faster than Windows. Microsoft smartly put a Linux inside the Windows and created Windows Subsystems for Linux (WSL). The WSL 2 is faster than Windows (Windows performance is pretty strange, and varies a lot through different power modes). MacOS performance should be similar to Linux.
+
+- Python version does impact the performance. I have tested that Python 3.11 is a little over *10% faster* than 3.8 based on my benchmark. The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C, and C should rarely change through out the years. When newer Python verison come out, I do not rerun the old results because very often the results were ran on other people's computer, so it is inconvenient to rerun the results. 
 
 # Results
 
 ![cpu_perf](cpu_perf.png)
 
 **Evaluation**
-1. M1 Pro is a laptop CPU (red line), but it beats the high-end desktop Intel CPU (green line), not to mention the labtop 10th-gen Intel CPU (blue and orange line). Note that the laptop i7 (blue line) is slower than laptop i5 (orange line). I think it is because the Microsoft Surface easily overheats and the Windows operating system will decrease the frequency, LOL.
-2. M2 in MacBook Air (purple line) is faster than M1 Pro (red line) when the number of task is 4 or under, but is slower when the number of task is larger than 4. This is because the M1 Pro has 6 performance cores and 2 efficiency cores while the M2 has 4 performance cores and 4 efficiency cores.
+1. Intel has finally significantly improved in recent years. The 13th gen (purple line) desktop CPU is a lot faster than then 10th gen (orange line).
+2. M1 Pro is a laptop CPU (green line), but it beats the high-end desktop Intel CPU (orange line), not to mention the labtop 10th-gen Intel CPU (blue line). 
+3. M2 in MacBook Air (red line) is faster than M1 Pro (green line) when the number of task is 4 or under, but is slower when the number of task is larger than 4. This is because the M1 Pro has 6 performance cores and 2 efficiency cores while the M2 has 4 performance cores and 4 efficiency cores.
 
-# Notes
-When evaluating Python on Apple Sillicon, need to be careful that your Anaconda might be running on Rosetta (increase runtime nearly by a factor of 2). Prior April 2022, the Anaconda only has intel version. To circumvent Rosetta, need to use the MacOS's built-in Python3. After May 2022, Anaconda released the M1 chip version and it is as fast the MacOS's built-in Python3.

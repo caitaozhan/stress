@@ -48,7 +48,7 @@ if __name__ == '__main__':
                 else:
                     runtimes.append(get_runtime(p))
             ps = new_ps
-            time.sleep(1)
+            time.sleep(0.1)
         print(f'# of tasks = {task}, runtimes = {runtimes}')
         
         # a little rest

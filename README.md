@@ -1,10 +1,12 @@
 # Introduction
-This is a simple and naive performance testing tool, derived from my workflow (need python3 and numpy). The testing is not comprehensive, but I think it is a good enough estimation.
+This is a simple and naive performance testing tool, derived from my workflow that heavily uses Python3 and Numpy. The testing is not comprehensive, but I think it is a good enough estimation.
 
 It is interesting to see how the CPU advances throughout the years. The complete raw data is [here](results). I have the data since the 3rd generation Intel chip using Ivy Bridge 22 nm microarchitecture. That was the laptop during my undergrad (2013~2017).
 
 # My CPU Performance Benchmark
-Stress a CPU by small matrix multiplication. Just run the following in the terminal:
+Stress a CPU by small matrix multiplication (I observe that small matrix multipliaction in Numpy only uses a single core, while large matrix multiplication uses multi-core). 
+
+To start the benchmark, please run the following in the terminal:
 
 **python stress.py -t 1 2 4 6 8 12 16**
 

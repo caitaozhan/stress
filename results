@@ -192,7 +192,7 @@ Task | time(s)
 12   | 47
 16   | 65
 
-Dell Presicion 3600 (2023), Windows WSL 2, Python 3.11
+Dell Presicion 3600 (2023), Windows WSL 2, Python 3.10
 i7-13700 (8 performance cores + 8 efficiency cores)
 Task | time(s)
 1    | 18

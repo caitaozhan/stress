@@ -4,9 +4,9 @@ Different than other benchmarks, my benchmark's performance metric **has actual 
 
 # My CPU Performance Benchmark
 Stress a CPU by small matrix multiplication (I observe that small matrix multipliaction in Numpy only uses a single core, while large matrix multiplication may use multi-core). To start the benchmark, please run the following in the terminal:
-
-**python stress.py -t 1 2 4 6 8 12 16**
-
+```
+python stress.py -t 1 2 4 6 8 12 16
+```
 # How Software Impact the Perforamnce
 - Operating System has an impact on the performance. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot accross different power modes). Microsoft smartly put a Linux inside the Windows and created Windows Subsystems for Linux (WSL). The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.
 

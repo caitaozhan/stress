@@ -24,7 +24,7 @@ def plot():
     ax.grid()
     ax.set_xticks(np.arange(len(X)))
     ax.set_xticklabels([str(x) for x in X])
-    ax.set_xlabel('Number of Tasks\n(task = do 10x10 matrix multiplication $10^7$ times)')
+    ax.set_xlabel('Number of Concurrent Tasks\n(task = do 10x10 matrix multiplication $10^7$ times)')
     ax.set_ylabel('Runtime (s)', fontsize=50)
     ax.set_ylim([0, 100])
     y_ticks = list(range(0, 110, 10))

@@ -7,10 +7,10 @@ Stress a CPU by small matrix multiplication (I observe that small matrix multipl
 ```
 python stress.py -t 1 2 4 6 8 12 16
 ```
-# How Software Impact the Perforamnce
-- Operating System has an impact on the performance. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot accross different power modes). Microsoft smartly put a Linux inside the Windows and created Windows Subsystems for Linux (WSL). The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.
+# How Software Impact the Performance
+- *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot accross different power modes). Microsoft smartly put a Linux inside the Windows and created Windows Subsystems for Linux (WSL). The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.
 
-- Python version does impact the performance. I have tested that Python 3.11 is a little over *10% faster* than 3.8 based on my benchmark. The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C, and C should rarely change through out the years. When newer Python verison come out, I do not rerun the old results because very often the results were ran on other people's computer, so it is inconvenient to rerun. 
+- *Python version*. I have tested that Python 3.11 is a little over *10% faster* than 3.8 based on my benchmark. The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C, and C rarely changes, and I think the matrix multiplication algorithm can barely improve. When newer Python verison come out, I do not rerun the old results because very often the results were ran on other people's computer, so it is inconvenient to rerun. 
 
 # Results
 

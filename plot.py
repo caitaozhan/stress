@@ -8,7 +8,7 @@ def plot():
     y3 = [33, 35, 35,   35,   35,   51,   64]    # i7-10700KF
     y4 = [23, 24, 24,   25,   30,   44,   60]    # M1 Pro (6 + 2)
     y5 = [19, 19, 22,   26,   33,   47,   65]    # M2 (4 + 4)
-    y6 = [18, 18, 18.5, 19.5, 23,   32,   43]    # i7-13700 (8 + 8)
+    y6 = [17, 17, 17,   18,   18,   24,   32]    # i7-13700K (8 + 8)
 
     plt.rcParams['font.size'] = 45
     plt.rcParams['lines.linewidth'] = 10
@@ -19,7 +19,7 @@ def plot():
     ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF (ABS Legend Gaming, 2021, Ubuntu)')
     ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro 6+2 core (MacBook Pro, 2021)')
     ax.plot(np.arange(len(y5)), y5, marker='o', markersize=20, label='M2 4+4 core (MacBook Air, 2022)')
-    ax.plot(np.arange(len(y6)), y6, marker='o', markersize=20, label='i7-13700 (Dell Precision, 2023, WSL 2, Py 3.10)')
+    ax.plot(np.arange(len(y6)), y6, marker='o', markersize=20, label='i7-13700K (Custom Built Desktop, 2023, WSL 2, Py 3.10)')
     fig.legend(ncol=1, fontsize=40, bbox_to_anchor=(0.97, 1.01))
     ax.grid()
     ax.set_xticks(np.arange(len(X)))

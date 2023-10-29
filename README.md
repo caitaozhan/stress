@@ -1,6 +1,6 @@
 # Introduction
 It is interesting to see how the CPU advances throughout the years. This repository is a simple performance benchmark, derived from my workflow that heavily uses Python3 and Numpy. 
-Different than other benchmarks, my benchmark's performance metric **has actual meanings**. The metric is the **runtime of completing some number of task concurrently**, and each task is fixed -- repeating $10\times10$ matrix multiplication $10^7$ times.
+Different than other benchmarks, my benchmark's performance metric **has actual meanings**. The metric is the **runtime (in seconds) of completing some number of tasks concurrently**, and each task is fixed -- repeating $10\times10$ matrix multiplication $10^7$ times.
 
 # My CPU Performance Benchmark
 Stress a CPU by small matrix multiplication (I observe that small matrix multipliaction in Numpy only uses a single core, while large matrix multiplication may use multi-core). To start the benchmark, please run the following in the terminal:

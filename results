@@ -92,6 +92,16 @@ task | time(s) | freq(GHz) | power(W)
 8    | 75      | 3.6       | 65 
 12   | 107     | 3.5       | 65
 
+CyberPowerPC Desktop (2019)
+i5-9400F (6 core)
+Task | time(s)
+1    | 32
+2    | 34
+4    | 35
+6    | 39
+8    | 55
+12   | 80
+
 ThinkPad x1c (2019)
 i5-10210U (4 core, 8 hyperthread)
 Task | time(s)

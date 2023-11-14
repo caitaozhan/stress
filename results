@@ -82,7 +82,7 @@ task | time(s) | freq(GHz) | power(W)
 2    | 59      | 3.5       | 22
 4    | 111     | 3.5       | 25
 
-ABS Summoner Desktop (2019)
+ABS Summoner Desktop (2018)
 i7-8700 (6 core, 12 hyperthread)
 task | time(s) | freq(GHz) | power(W)
 1    | 42      | 4.3       | 34

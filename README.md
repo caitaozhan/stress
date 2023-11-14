@@ -22,4 +22,4 @@ python stress.py -t 1 2 4 6 8 12 16
 3. M2 in MacBook Air (red line) is faster than M1 Pro (green line) when the number of task is 4 or under, but is slower when the number of task is larger than 4. This is because the M1 Pro has 6 performance cores and 2 efficiency cores while the M2 has 4 performance cores and 4 efficiency cores.
 
 
-**More**: The complete raw data is [here](results). I have the data since the 3rd generation Intel chip using Ivy Bridge 22 nm microarchitecture. That was the laptop during my undergrad (2013~2017).
+**More**: The complete raw data is [here](results). The oldest datapoint is from a MacBook Pro (Retina, 15-inch, Mid 2012).

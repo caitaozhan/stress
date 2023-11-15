@@ -30,13 +30,6 @@ task | time(s) | freq(GHz) | power(W)
 2    | 107     | 3.0       | 14      
 4    | 192     | 3.0       | 15      
 
-Acer (2013)
-i5-4200U (2 core, 4 hyperthread)
-task | time(s) | freq(GHz) | power(W)
-1    | 77      | 2.3       | 11
-2    | 86      | 2.3       | 15
-4    | 167     | 2.3       | 16
-
 Macbook Pro late 2013 
 i7-4960HQ (4 core, 8 threads)
 task | time(s)
@@ -54,6 +47,13 @@ task | time(s)
 4    | 64
 6    | 91
 8    | 118
+
+Acer (2014)
+i5-4200U (2 core, 4 hyperthread)
+task | time(s) | freq(GHz) | power(W)
+1    | 77      | 2.3       | 11
+2    | 86      | 2.3       | 15
+4    | 167     | 2.3       | 16
 
 Alienware Area-51 R2 (2015)
 i7-5820K (6 core, 12 hyperthread)
@@ -178,7 +178,7 @@ task | time(s) | freq(GHz)
 12   | 51      | 4.7
 16   | 64      | 4.7
 
-HP Desktop (2021)
+HP Desktop (2021), Windows
 i7-11700 (8 core, 16 hyperthread)
 task | time(s) | freq(GHz)
 1    | 33      | 4.8

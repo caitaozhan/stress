@@ -55,6 +55,16 @@ task | time(s)
 6    | 91
 8    | 118
 
+Alienware Area-51 R2 (2015)
+i7-5820K (6 core, 12 hyperthread)
+task | time(s) 
+1    | 42
+2    | 44
+4    | 44
+6    | 46
+8    | 64
+12   | 90
+
 Thinkpad P50 (2016)
 i7-6700HQ (4 core, 8 hyperthread)
 task | time(s) | freq(GHz) | power(W)

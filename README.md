@@ -5,7 +5,7 @@ Unlike other benchmarks, my benchmark's performance metric **has actual meanings
 # How to Run the Benchmark
 Stress a CPU by small matrix multiplication. I observe that small matrix multiplication in Numpy only uses a single core, so *# of tasks is equivalent to # of CPU cores*. To start the benchmark, please run the following in the terminal:
 ```
-python stress.py -t 1 2 4 6 8 12 16
+python stress.py --tasks 1 2 4 6 8 12 16
 ```
 # How Software Impacts the Performance
 - *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot across different power modes). Microsoft smartly put Linux inside Windows and created Windows Subsystems for Linux (WSL). The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.

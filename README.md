@@ -10,12 +10,13 @@ python stress.py -t 1 2 4 6 8 12 16
 `-t` is short for `--tasks`, denoting the number of tasks running concurrently. Also, remember to run the `htop` command to observe the stressing process.
 
 # Impact of Software on the Benchmark
+For a CPU performance benchmark, we hope that software (i.e., operating systems and Python versions) shall have a minimal effect. Or else, we don't know whether the improvement is caused by hardware or software.
 - *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot across different power modes). 
 Microsoft smartly put Linux inside Windows and created Windows Subsystems for Linux (WSL). 
 The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.
 
 - *Python version*. [Python 3.11](https://github.com/caitaozhan/stress/blob/8a399b5a8d62d5beee7fbc3dcf75bed97d2c805b/results#L214) is around *14% faster* than [Python 3.8](https://github.com/caitaozhan/stress/blob/8a399b5a8d62d5beee7fbc3dcf75bed97d2c805b/results#L203) based on my benchmark running on my Macbook Pro (2021).
-The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C/C++. I think both C/C++ speed and matrix multiplication algorithm can barely improve. 
+The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C/C++. I think both C/C++ speed and matrix multiplication algorithm barely improve. 
 When newer Python versions come out, I do not rerun the old results because very often the results are run on other people's computers, so it is inconvenient to rerun. 
 
 # Results

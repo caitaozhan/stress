@@ -9,7 +9,7 @@ python stress.py -t 1 2 4 6 8 12 16
 ```
 `-t` is short for `--tasks`, denoting the number of tasks running concurrently. Also, remember to run the `htop` command to observe the stressing process.
 
-# How Software Impacts the Performance
+# How Software Impacts the CPU Performance Benchmark
 - *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot across different power modes). 
 Microsoft smartly put Linux inside Windows and created Windows Subsystems for Linux (WSL). 
 The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.

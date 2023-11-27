@@ -200,7 +200,7 @@ Task | time(s)
 12   | 73
 16   | 100
 
-MacBook Pro 14' (2021)
+MacBook Pro 14' (2021), Py 3.8
 M1 Pro (6 performace cores + 2 efficient cores)
 Task | time(s)
 1    | 23
@@ -210,6 +210,17 @@ Task | time(s)
 8    | 30
 12   | 44
 16   | 60
+
+MacBook Pro 14' (2021), Py 3.11
+M1 Pro (6 performace cores + 2 efficient cores)
+Task | time(s)
+1    | 19.9
+2    | 20.7
+4    | 21.1
+6    | 21.2
+8    | 25.9
+12   | 38.5
+16   | 51.3
 
 MacBook Pro Air (2022)
 M2 (4 performace cores + 4 efficient cores)

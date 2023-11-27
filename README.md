@@ -10,9 +10,13 @@ python stress.py -t 1 2 4 6 8 12 16
 `-t` is short for `--tasks`, denoting the number of tasks running concurrently. Also, remember to run the `htop` command to observe the stressing process.
 
 # How Software Impacts the Performance
-- *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot across different power modes). Microsoft smartly put Linux inside Windows and created Windows Subsystems for Linux (WSL). The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.
+- *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot across different power modes). 
+Microsoft smartly put Linux inside Windows and created Windows Subsystems for Linux (WSL). 
+The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.
 
-- *Python version*. I have tested that Python 3.11 is a little over *10% faster* than 3.8 based on my benchmark. The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C, and C rarely changes, and I think the matrix multiplication algorithm can barely improve. When newer Python verison come out, I do not rerun the old results because very often the results are run on other people's computers, so it is inconvenient to rerun. 
+- *Python version*. Python 3.11 is around *14% faster* than 3.8 based on my benchmark running on my Macbook Pro (2021).
+The difference is larger than I expected, since my benchmark's bottleneck is running numpy.dot(), which is implemented in C, and C rarely changes, and I think the matrix multiplication algorithm can barely improve. 
+When newer Python verison come out, I do not rerun the old results because very often the results are run on other people's computers, so it is inconvenient to rerun. 
 
 # Results
 

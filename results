@@ -167,7 +167,7 @@ task | time(s) | freq(GHz) | power(W)
 12   | 61      | 4.6       | 142
 16   | 76      | 4.6       | 160
 
-ABS Legend Desktop (2021)
+ABS Legend Desktop (2021), Py 3.9
 i7-10700KF (8 core, 16 hyperthread)
 task | time(s) | freq(GHz)
 1    | 33      | 4.8

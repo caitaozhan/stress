@@ -1,4 +1,4 @@
-# Introduction: CPU Performance Benchmark
+# Introduction to CPU Performance Benchmark
 It is interesting to see how the CPU advanced throughout the years. This repository is a simple performance benchmark, derived from my workflow that heavily uses Python3 and Numpy. 
 Unlike other benchmarks, my benchmark's performance metric **has actual meanings**. The metric is the **runtime (in seconds) of completing some number of tasks concurrently**, and each task is fixed -- repeating $10\times10$ matrix multiplication $10^7$ times.
 
@@ -9,7 +9,7 @@ python stress.py -t 1 2 4 6 8 12 16
 ```
 `-t` is short for `--tasks`, denoting the number of tasks running concurrently. Also, remember to run the `htop` command to observe the stressing process.
 
-# How Software Impacts the CPU Performance Benchmark
+# Impact of Software on the Benchmark
 - *Operating System*. Linux is apparently faster than Windows (Windows performance is also strange, and varies a lot across different power modes). 
 Microsoft smartly put Linux inside Windows and created Windows Subsystems for Linux (WSL). 
 The WSL 2 is faster than Windows. MacOS performance should be similar to Linux.

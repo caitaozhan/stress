@@ -258,7 +258,7 @@ Task | time(s)
 24   | 39
 
 MacBook Pro 14' (2023), Py 3.12
-M3 Pro (8 performace cores + 2 efficient cores)
+M3 Pro (6 performace cores + 5 efficient cores)
 Task | time(s)
 1    | 15.6
 2    | 15.9

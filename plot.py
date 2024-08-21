@@ -21,7 +21,7 @@ def plot():
     ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro 6+2 core (MacBook Pro, 2021, Py 3.8)')
     ax.plot(np.arange(len(y5)), y5, marker='o', markersize=20, label='M2 4+4 core (MacBook Air, 2022)')
     ax.plot(np.arange(len(y6)), y6, marker='o', markersize=20, label='i7-13700K (Custom Built Desktop, 2023, WSL 2, Py 3.10)')
-    ax.plot(np.arange(len(y7)), y7, marker='o', markersize=20, label='M3 Pro 6+5 core (MacBook Pro, 2023, 3.12)')
+    ax.plot(np.arange(len(y7)), y7, marker='o', markersize=20, label='M3 Pro 6+5 core (MacBook Pro, 2023, Py 3.12)')
     fig.legend(ncol=1, fontsize=40, bbox_to_anchor=(0.97, 1.01))
     ax.grid()
     ax.set_xticks(np.arange(len(X)))

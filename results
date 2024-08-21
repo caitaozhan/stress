@@ -256,3 +256,14 @@ Task | time(s)
 16   | 32
 20   | 37
 24   | 39
+
+MacBook Pro 14' (2023), Py 3.12
+M3 Pro (8 performace cores + 2 efficient cores)
+Task | time(s)
+1    | 15.6
+2    | 15.9
+4    | 16.8
+6    | 19.2
+8    | 22.2
+12   | 29.0
+16   | 37.6

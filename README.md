@@ -23,7 +23,7 @@ When newer Python versions come out, I do not rerun the old results because very
 
 <p align="center">
   <picture>
-   <img src="cpu_perf.png" width="600" class="center">
+   <img src="cpu_perf.png" width="700" class="center">
   </picture>
 </p>
 

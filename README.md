@@ -3,7 +3,7 @@ It is interesting to see how the CPU advanced throughout the years. This reposit
 Unlike other benchmarks, my benchmark's performance metric **has actual meanings**. The metric is the **runtime (in seconds) of completing some number of tasks concurrently**, and each task is fixed -- repeating $10\times10$ matrix multiplication $10^7$ times.
 
 # How to Run the Benchmark
-Stress a CPU by small matrix multiplication. I observe that **small matrix multiplication in NumPy only uses a single core**. To start the benchmark, please run the following in the terminal:
+Stress a CPU by small matrix multiplication. I observe that **small matrix multiplication in NumPy only uses a single core**. Before running the benchmark, please close most, if not all, of your existing programs. To start the benchmark, please run the following in the terminal:
 ```
 python stress.py -t 1 2 4 6 8 12 16
 ```

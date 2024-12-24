@@ -1,9 +1,9 @@
 # Introduction to CPU Performance Benchmark
-It is interesting to see how the CPU advanced throughout the years. This repository is a simple performance benchmark, derived from my workflow that heavily uses Python3 and Numpy. 
+It is interesting to see how the CPU advanced throughout the years. This repository is a simple performance benchmark, derived from my workflow that heavily uses Python and NumPy. 
 Unlike other benchmarks, my benchmark's performance metric **has actual meanings**. The metric is the **runtime (in seconds) of completing some number of tasks concurrently**, and each task is fixed -- repeating $10\times10$ matrix multiplication $10^7$ times.
 
 # How to Run the Benchmark
-Stress a CPU by small matrix multiplication. I observe that **small matrix multiplication in Numpy only uses a single core**. To start the benchmark, please run the following in the terminal:
+Stress a CPU by small matrix multiplication. I observe that **small matrix multiplication in NumPy only uses a single core**. To start the benchmark, please run the following in the terminal:
 ```
 python stress.py -t 1 2 4 6 8 12 16
 ```

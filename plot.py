@@ -14,15 +14,15 @@ def plot():
     plt.rcParams['font.size'] = 45
     plt.rcParams['lines.linewidth'] = 10
     fig, ax = plt.subplots(1, 1, figsize=(20, 24))
-    fig.subplots_adjust(left=0.15, right=0.95, top=0.77, bottom=0.1)
+    fig.subplots_adjust(left=0.15, right=0.95, top=0.8, bottom=0.1)
     # ax.plot(np.arange(len(y2)), y2, marker='o', markersize=20, label='i7-1065G7 (Microsoft Surface 3 2020)')
     ax.plot(np.arange(len(y1)), y1, marker='o', markersize=20, label='i5-1038NG7 (MacBook Pro, 2020)')
     ax.plot(np.arange(len(y3)), y3, marker='o', markersize=20, label='i7-10700KF (ABS Legend Gaming, 2021, Ubuntu, Py 3.9)')
     ax.plot(np.arange(len(y4)), y4, marker='o', markersize=20, label='M1 Pro 6+2 core (MacBook Pro, 2021, Py 3.8)')
     ax.plot(np.arange(len(y5)), y5, marker='o', markersize=20, label='M2 4+4 core (MacBook Air, 2022)')
     ax.plot(np.arange(len(y6)), y6, marker='o', markersize=20, label='i7-13700K (Custom Built Desktop, 2023, WSL 2, Py 3.10)')
-    ax.plot(np.arange(len(y7)), y7, marker='o', markersize=20, label='M3 Pro 6+5 core (MacBook Pro, 2023, Py 3.12)')
-    fig.legend(ncol=1, fontsize=40, bbox_to_anchor=(0.97, 1.01))
+    ax.plot(np.arange(len(y7)), y7, marker='o', markersize=20, label='M3 Pro 5+6 core (MacBook Pro, 2023, Py 3.12)')
+    fig.legend(ncol=1, fontsize=30, bbox_to_anchor=(0.9, 1))
     ax.grid()
     ax.set_xticks(np.arange(len(X)))
     ax.set_xticklabels([str(x) for x in X])

@@ -279,3 +279,14 @@ Task | time(s)
 8    | 22.31
 12   | 23.57
 16   | 23.54
+
+MacBook Pro 14' (2024), Py 3.12
+M4 Pro (10 performace cores + 4 efficient cores)
+Task | time(s)
+1    | 13.9
+2    | 14.07
+4    | 14.1
+6    | 14.36
+8    | 15.32
+12   | 18.12
+16   | 22.96

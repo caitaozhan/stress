@@ -45,7 +45,7 @@ The complete raw data is [here](results). The oldest data point is from a MacBoo
 # of tasks = 12, runtimes = [44.43, 44.54, 44.52, 44.67, 44.69, 44.73, 44.7, 44.74, 44.81, 44.87, 44.87, 44.97]
 # of tasks = 16, runtimes = [60.9, 61.23, 61.27, 61.51, 61.43, 61.51, 61.55, 61.62, 61.63, 61.53, 61.76, 61.79, 61.73, 61.79, 61.72, 62.06]
 ```
-4. Update the [result](results) file. Only pick the last number of each `runtimes` list. Also, please include meta including the CPU name, year of CPU, Python version, Opearting system name (no need for MacBook), number of performance and efficient cores. Below is an example.
+4. Update the [result](results) file. Only pick the last (largest) number of each `runtimes` list. Also, please include meta including the CPU name, year of CPU, Python version, Opearting system name (no need for MacBook), number of performance and efficient cores. Below is an example.
 ```
 MacBook Air (2022), Py 3.12
 M2 (4 performance cores + 4 efficient cores)

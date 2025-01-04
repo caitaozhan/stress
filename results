@@ -222,7 +222,7 @@ Task | time(s)
 12   | 38.5
 16   | 51.3
 
-MacBook Air (2022)
+MacBook Air (2022), Py 3.10
 M2 (4 performance cores + 4 efficient cores)
 Task | time(s)
 1    | 19

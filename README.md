@@ -27,8 +27,7 @@ The difference is larger than I expected since my benchmark's bottleneck is runn
   </picture>
 </p>
 
-CPU performance is improving year by year. Currently, the best CPU tested is the M4 Pro (10+4), the grey line in the plot.
-
+CPU performance is improving year by year. Currently, the best CPU tested is the M4 Max (12+4).
 The complete raw data is [here](results). The oldest data point is from a MacBook Pro (Retina, 15-inch, Mid 2012).
 
 # How to Contribute
